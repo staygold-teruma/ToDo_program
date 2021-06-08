@@ -18,7 +18,6 @@ class ToDo
 
   # キーワードを引数で渡す場合は(id:)と記述
   def delete(id:)
-
     # 配列.find { |変数| 条件 }
     specified_task = @tasks.find {|task| task.id == id}
     if specified_task == nil
@@ -28,5 +27,4 @@ class ToDo
       puts "[No.#{specified_task.id}] #{specified_task.title}を削除しました"
     end
   end
-  
 end
